@@ -1,0 +1,17 @@
+c2c8108 HEAD@{0}: merge develop: Fast-forward
+1781945 HEAD@{1}: checkout: moving from develop to master
+c2c8108 HEAD@{2}: commit (merge): resolved merge conflict
+c15877d HEAD@{3}: merge images: Fast-forward
+d434b40 HEAD@{4}: checkout: moving from styles to develop
+ed23c80 HEAD@{5}: commit: added styles to index.html
+23a64b7 HEAD@{6}: checkout: moving from images to styles
+c15877d HEAD@{7}: checkout: moving from styles to images
+23a64b7 HEAD@{8}: commit: added styles.css
+d434b40 HEAD@{9}: checkout: moving from develop to styles
+d434b40 HEAD@{10}: checkout: moving from images to develop
+c15877d HEAD@{11}: commit: added images to index.html
+959c5cb HEAD@{12}: commit: added images tux,Devops,git
+d434b40 HEAD@{13}: checkout: moving from develop to images
+d434b40 HEAD@{14}: commit: added index.html
+1781945 HEAD@{15}: checkout: moving from master to develop
+1781945 HEAD@{16}: commit (initial): initial commit, added readme.txt
