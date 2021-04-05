@@ -4,7 +4,7 @@ Routing between two buildings
 <img src="screenshots/1.jpg">
 ## Task2
 Eight networks connected to one router
-<img ## Task2src="screenshots/2.jpg">
+<img src="screenshots/2.jpg">
 ## Task3
 Using only one port (VLAN + trunk)  
 VIDEO
