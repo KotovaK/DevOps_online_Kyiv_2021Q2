@@ -1,13 +1,5 @@
 
-
-
-
-
-
-https://youtu.be/qsfoqGeCO8Q
-
-
-<video width="320" height="240" controls>
-  <source src="video/1.mp4" type="video/mp4">
-</video>
-
+<div align="center">
+   <iframe width="560" height="315" src="https://youtu.be/qsfoqGeCO8Q" frameborder="0" allowfullscreen>
+   </iframe>
+</div>
