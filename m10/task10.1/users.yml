@@ -1,0 +1,33 @@
+# ---
+- name: add users
+  hosts: all
+  tasks:
+    - name: add admins group
+      group:
+        name: admins
+
+    - name: add full sudo permissions for group admins
+      lineinfile:
+        path: /etc/sudoers
+        line: "%admins ALL=(ALL) NOPASSWD:ALL"
+
+    - name: add user katya
+      user:
+        name: katya
+        groups: admins
+
+    - name: add user alex
+      user:
+        name: alex
+        groups: admins
+
+    - name: upload katya's ssh key 
+      authorized_key: 
+        user: katya
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoKi2IrpWsNy5drDYwe04hBz8iRmP1unFcFDSuKZHnJrlAsFU8kMdM+m9g0d+Yf1+LH6lp15fILqPd6CoqXEXc+eURHKmOaeosjypvScDW9dytMA8VByXs+OnPjTSsg2fPsVDjA5lcK1ezgBSlBr4N5p0Rv6OeCcCQJblE28RY6sgSDXGMsWgjor/7hvxGH6c1fPyH2A3ScgsyDdD1SzqtkBybY3Kf2RTft20ayyejpDtnQRQSPwOWFWkA3gfOXGOEt2OeK9qbVr5xbEv+6IcdRG9LGTsPp6RvSY3mDxZZX50fzSBFEsfVtlK0K2B+25e8Zc5ETyyFXhZ3OLHnhwAN katya@desktop"
+
+    - name: upload alex's ssh key 
+      authorized_key: 
+        user: alex
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqTeSHjayPjf7parYYIA7cecwrr9lEyIBGB0d9AoMN6v93tQQAdcJUIwbJu95PcdxEbgmGGdVmHuk6/I7Ta7Z2+r2CK3NL8LytYxTioWTDtpOTPHg5nwh32rpQSbr0//oVDgL+t7TYqtua/eJFHSMEN0Uwychcmlfm6UTX8YbCIz/hoTh+KqaZXL3N0tA/vw0NR0l9reIhnOBJ4kMs+mtO4Coki3toSFX8ufCr3zQ2gl4gGc2+fKKa6bFWZ1xZPhuXLtHtfQ+8Cpt/1AezT/K5ErZutRRyakYbPS6WUZsc+xdx29H+0ssmOtZoimoC+oCP84S4YZN5kBrfOtF5ojED katya@desktop"
+# ---

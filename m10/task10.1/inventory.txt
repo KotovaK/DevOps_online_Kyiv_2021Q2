@@ -1,0 +1,2 @@
+ec2-52-59-204-165.eu-central-1.compute.amazonaws.com
+ec2-3-66-156-166.eu-central-1.compute.amazonaws.com

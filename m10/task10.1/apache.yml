@@ -1,0 +1,14 @@
+# ---
+- name: Apache playbook
+  hosts: all
+  tasks:
+    - name: Install apache
+      yum:
+        name: httpd
+        state: latest
+    - name: Start apache
+      systemd:
+        state: started
+        name: httpd
+        enabled: yes
+# ---
