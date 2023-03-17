@@ -31,4 +31,4 @@
 15. Static website on Amazon S3
 <img src="screenshots/15.png">
 
-url to the website http://kotova-bucket.s3-website.eu-central-1.amazonaws.com/
+url to the website http://kotova-bucket.s3-website.eu-central-1.amazonaws.com/ 
